@@ -1,0 +1,32 @@
+header {
+  padding: 1.5rem 0;
+}
+@media screen and (max-width: 990px) {
+  header nav ul {
+    display: none !important;
+  }
+}
+header nav ul {
+  list-style: none;
+  align-items: center;
+  display: inline-flex;
+}
+header nav ul li {
+  margin-left: 1.5rem;
+}
+header nav ul li a {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 250ms ease-in;
+}
+header nav ul li a:hover {
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+}
+header .page-logo-text {
+  font-weight: 800;
+  color: #8A1C7C;
+  margin-left: 12px;
+}

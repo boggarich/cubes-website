@@ -1,0 +1,180 @@
+.page-content-wrapper {
+
+    &.landing-page {
+        background-image: url("../img/landing-page-bg.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        background-attachment: fixed;
+
+        .has-bg-overlay::after {
+            transform: translateX(65%);
+            background-color: rgba(153, 51, 204, 0.5);
+            filter: blur(300px);
+        }
+
+        .transparent-card {
+            height: fit-content;
+            position: relative;
+
+            > div {
+                position: relative;
+            }
+
+            @media screen and (max-height: 900px) {
+                margin-top: 1.5rem;
+            }
+
+            @media screen and (min-width: 991px) {
+                width: 78%;
+            }
+
+            .card-body {
+                padding: 23px 22px 36px 20px;
+
+                .card {
+
+                    &:nth-child(2) {
+
+                        padding-bottom: 2rem !important;
+
+                        .btn {
+                            margin-left: 1.625rem;
+                            margin-right: 2rem;
+                        }
+
+                        span {
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+
+                        input {
+                            padding: 9px 13px 10px;
+                            background: #FFFFFF;
+                            border: 1px solid rgba(0, 0, 0, 0.1);
+                            border-radius: 10px;
+                            width: 200px;
+
+                            @media screen and (max-width: 480px) {
+
+                              width: 120px;
+                            
+                            }
+
+                            &::placeholder {
+                                color: rgba(0, 0, 0, 0.3);
+                            }
+                              
+                            &:-ms-input-placeholder {
+                                color: rgba(0, 0, 0, 0.3);
+                            }
+                              
+                            &::-ms-input-placeholder {
+                                color: rgba(0, 0, 0, 0.3);
+                            }
+
+                        }
+
+                        > div {
+
+                            &:nth-child(2) {
+                                span {
+                                    font-weight: 700;
+                                }
+                            }
+
+                            &:first-child {
+                                p {
+                                    font-size: 14px;
+                                }
+                            }
+
+                        }
+                    }
+
+                    p {
+                        color: #341454;
+                        font-weight: 700;
+                    }
+
+                    h4 {
+                        color: #341454;
+                    }
+                    
+                    span {
+                        font-weight: 600;
+                        color: #341454;
+                    }
+
+                    &:first-child {
+                        margin-bottom: 2.5rem;
+                    }
+                }
+
+            }
+
+        }
+
+        .page-hero-header {
+
+            + .sub-header {
+
+                @media screen and (max-height: 899px) {
+                    width: 75%;
+                }
+
+            }
+
+            span {
+                color:#9933CC;
+            }
+        }
+
+        .page-content {
+
+            .grid-2-column {
+
+                > div {
+
+                    &:first-child {
+                        height: fit-content;
+                    }
+
+                    @media screen and (max-height: 900px) {
+                        min-height: 550px;
+                    }
+
+                    @media screen and (min-height: 900px) {
+                        min-height: 670px;
+                    }
+                    
+                }
+            }
+
+        }
+
+        &.has-overlay::before {
+            background: linear-gradient(90.9deg, #000000 0.67%, rgba(0, 0, 0, 0.8) 30.94%);
+        }
+
+    }
+
+}
+
+@media screen and (max-height: 899px) {
+
+    .page-hero-header {
+        margin-bottom: 4rem;
+    }
+
+}
+
+@media screen and (min-height: 900px) {
+
+    .page-hero-header {
+        margin-bottom: 5rem;
+    }
+    
+}
+
